@@ -5,11 +5,17 @@ class TreeNode:
         self.value= value
 
 
-    def insert(self, value):
-        if value < self.value:
-            self.left = TreeNode(value)
+    def insert(self, key_value):
+        if key_value < self.value:
+                if self.left is None:
+                    self.left = TreeNode(key_value)
+                else:
+                    self.left.insert(key_value)
         else:
-             self.right= TreeNode(value)
+                if self.right is None:
+                  self.right= TreeNode(key_value)
+                else:
+                   self.right.insert(key_value)
 
     def in_order_traversal(self):
         if self.left:
@@ -38,8 +44,43 @@ class TreeNode:
         print(self.value)
 
 
+    def find(self, key):
+        if key < self.value:
+            if self.left is None:
+                return False
+            else:
+                return self.left.find()
+
+        elif key > self.value:
+            if self.right is None:
+                return False
+            return self.right.find()
+        else:
+            return True
+
+    def method(self):
+        return True
+
 if __name__=='__main__':
-    trav= TreeNode('Á')
+    trav= TreeNode(10)
+    trav.insert(6)
+    trav.insert(19)
+    trav.insert(7)
+    trav.insert(34)
+    trav.insert(51)
+    trav.insert(15)
+    trav.insert(17)
+    trav.insert(99)
+    trav.insert(27)
+    trav.insert(13)
+    trav.insert(11)
+
+    trav.in_order_traversal()
+    print("\n")
+    trav.post_order_traversal()
+    print("\n")
+    trav.pre_order_traversal()
+    print("\n")
 
 
 
