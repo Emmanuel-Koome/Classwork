@@ -1,0 +1,25 @@
+Index: traversals.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class TreeNode:\r\n    def __init__(self, value):\r\n        self.left= None\r\n        self.right= None\r\n        self.value= value\r\n\r\n\r\n    def insert(self, key_value):\r\n        if key_value < self.value:\r\n                if self.left is None:\r\n                    self.left = TreeNode(key_value)\r\n                else:\r\n                    self.left.insert(key_value)\r\n        else:\r\n                if self.right is None:\r\n                  self.right= TreeNode(key_value)\r\n                else:\r\n                   self.right.insert(key_value)\r\n\r\n    def in_order_traversal(self):\r\n        if self.left:\r\n            self.left.in_order_traversal()\r\n        print(self.value)\r\n\r\n        if self.right:\r\n            self.right.in_order_traversal()\r\n\r\n\r\n    def pre_order_traversal(self):\r\n        print(self.value)\r\n        if self.left:\r\n            self.left.pre_order_traversal()\r\n\r\n        if self.right:\r\n            self.right.pre_order_traversal()\r\n\r\n\r\n    def post_order_traversal(self):\r\n        if self.left:\r\n            self.left.pre_order_traversal()\r\n\r\n        if self.right:\r\n            self.right.pre_order_traversal()\r\n        print(self.value)\r\n\r\n\r\n    def find(self, key):\r\n        if key < self.value:\r\n            if self.left is None:\r\n                return False\r\n            else:\r\n                return self.left.find()\r\n\r\n        elif key > self.value:\r\n            if self.right is None:\r\n                return False\r\n            return self.right.find()\r\n        else:\r\n            return True\r\n\r\n    def method(self):\r\n        return True\r\n\r\nif __name__=='__main__':\r\n    trav= TreeNode(10)\r\n    trav.insert(6)\r\n    trav.insert(19)\r\n    trav.insert(7)\r\n    trav.insert(34)\r\n    trav.insert(51)\r\n    trav.insert(15)\r\n    trav.insert(17)\r\n    trav.insert(99)\r\n    trav.insert(27)\r\n    trav.insert(13)\r\n    trav.insert(11)\r\n\r\n    trav.in_order_traversal()\r\n    print(\"\\n\")\r\n    trav.post_order_traversal()\r\n    print(\"\\n\")\r\n    trav.pre_order_traversal()\r\n    print(\"\\n\")\r\n\r\n\r\n\r\n\r\n
+===================================================================
+diff --git a/traversals.py b/traversals.py
+--- a/traversals.py	(revision 9c123424fb1d4928fe21ddb969ae464484d3ca28)
++++ b/traversals.py	(date 1749453872082)
+@@ -64,11 +64,11 @@
+ if __name__=='__main__':
+     trav= TreeNode(10)
+     trav.insert(6)
+-    trav.insert(19)
+-    trav.insert(7)
+-    trav.insert(34)
+-    trav.insert(51)
+-    trav.insert(15)
++    trav.insert(5)
++    trav.insert(4)
++    trav.insert(3)
++    trav.insert(2)
++    trav.insert(1)
+     trav.insert(17)
+     trav.insert(99)
+     trav.insert(27)
