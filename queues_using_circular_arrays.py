@@ -2,10 +2,12 @@ class CircularArrayQueue:
     default_capacity= 10
 
 
+
     def __init__(self):
         self.data = [None] * CircularArrayQueue.default_capacity
         self.size = 0
         self.front = 0
+
 
 
     def __len__(self):
