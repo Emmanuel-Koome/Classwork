@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="552f70d6-5045-444d-bc9f-39e1986ec3bd" name="Changes" comment="all traversals">
-      <change afterPath="$PROJECT_DIR$/trasversals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search_algorithms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +24,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ft-trees" />
+        <entry key="$PROJECT_DIR$" value="ft-graphs" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,22 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.linkedlist.executor": "Run",
-    "Python.linkedlist2.executor": "Run",
-    "Python.palindrome.executor": "Run",
-    "Python.queues_using_circular_arrays.executor": "Run",
-    "Python.queuesusingStackbasics.executor": "Run",
-    "Python.trasversals.executor": "Run",
-    "Python.traversals.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "ft-graphs",
-    "last_opened_file_path": "C:/Users/Emman/scrip"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.linkedlist.executor&quot;: &quot;Run&quot;,
+    &quot;Python.linkedlist2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.palindrome.executor&quot;: &quot;Run&quot;,
+    &quot;Python.queues_using_circular_arrays.executor&quot;: &quot;Run&quot;,
+    &quot;Python.queuesusingStackbasics.executor&quot;: &quot;Run&quot;,
+    &quot;Python.search_algorithms.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trasversals.executor&quot;: &quot;Run&quot;,
+    &quot;Python.traversals.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ft-search-algorithms&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Emman/scrip&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Python.linkedlist">
     <configuration name="linkedlist" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Classwork" />
       <option name="ENV_FILES" value="" />
@@ -207,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749453836212</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="all traversals">
+      <option name="closed" value="true" />
+      <created>1750662050277</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750662050277</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +237,7 @@
     <MESSAGE value="linked lists code" />
     <MESSAGE value="traversals code" />
     <MESSAGE value="queues code" />
+    <MESSAGE value="Initial commit" />
     <MESSAGE value="all traversals" />
     <option name="LAST_COMMIT_MESSAGE" value="all traversals" />
   </component>
