@@ -4,6 +4,7 @@ class LinkedlistNode:
         self.nextNode = nextNode
 
 
+
 node1= LinkedlistNode(1)
 node2= LinkedlistNode("2")
 node3= LinkedlistNode("3")
